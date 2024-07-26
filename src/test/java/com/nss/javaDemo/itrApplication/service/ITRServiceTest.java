@@ -36,7 +36,7 @@ class ITRServiceTest {
         String formSelected = service.selectFormAndCalculateTax(form);
 
         assertEquals("ITR Form 3", formSelected);
-        assertEquals(2100000, service.getCalculatedTax());
+        assertEquals(1400000.0, service.getCalculatedTax());
     }
 
     @Test

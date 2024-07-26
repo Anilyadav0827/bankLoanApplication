@@ -35,7 +35,7 @@ public class CalculateTaxService {
                                boolean hasPresumptiveIncome, boolean isPartnershipFirmIncome) {
         double tax;
 
-        if (annualIncome > 5000000) {
+        if (annualIncome > 10000000) {
             tax = 0.3 * annualIncome;
         } else {
             tax = 0.2 * annualIncome;
@@ -49,7 +49,7 @@ public class CalculateTaxService {
                                boolean isFirm, boolean hasPresumptiveIncome) {
         double tax;
 
-        if (annualIncome > 5000000) {
+        if (annualIncome > 20000000) {
             tax = 0.3 * annualIncome;
         } else {
             tax = 0.2 * annualIncome;

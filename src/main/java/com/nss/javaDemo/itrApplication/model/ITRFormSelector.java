@@ -13,9 +13,8 @@ public class ITRFormSelector {
     public boolean isFirm;
 
     // Constructor for ITR-1
-    public ITRFormSelector(int salary) {
-
-        this.annualIncome = salary;
+    public ITRFormSelector(int annualIncome) {
+        this.annualIncome = annualIncome;
     }
 
     // Constructor for ITR-2
@@ -29,17 +28,15 @@ public class ITRFormSelector {
     }
 
     // Constructor for ITR-3 and ITR-4
-    public ITRFormSelector(int annualIncome,boolean isPartnershipFirmIncome, boolean isBusinessProfessionIncome, boolean hasPresumptiveIncome) {
+    public ITRFormSelector(int annualIncome, boolean isPartnershipFirmIncome, boolean isBusinessProfessionIncome, boolean hasPresumptiveIncome) {
+        this.annualIncome = annualIncome;
         this.isPartnershipFirmIncome = isPartnershipFirmIncome;
         this.isBusinessProfessionIncome = isBusinessProfessionIncome;
         this.hasPresumptiveIncome = hasPresumptiveIncome;
-        this.annualIncome= annualIncome;
     }
 
     // Constructor for ITR-5
-   public ITRFormSelector(boolean isFirm){
-
+    public ITRFormSelector(boolean isFirm) {
         this.isFirm = isFirm;
-   }
-
+    }
 }
